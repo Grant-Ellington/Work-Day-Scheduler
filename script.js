@@ -9,9 +9,12 @@ $(function () {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
   //
+  var nineHr = $('hour-9')
   var saveBtn = $('.saveBtn') 
+  var textarea = $('textarea')
   saveBtn.on('click', function(){
-    console.log('hit')
+    savedNote = textarea.val() 
+    localStorage.setItem('savedNote', savedNote)
   })
 
   // TODO: Add code to apply the past, present, or future class to each time
@@ -24,11 +27,14 @@ $(function () {
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
+
+  perviousNote = localStorage.getItem('savedNote')
+  textarea.text(perviousNote)
   // TODO: Add code to display the current date in the header of the page.
   
 
   function displayTime(){
-    currentTime = dayjs().format('MMM d, YYYY [at] hh:mm:ss')
+    var currentTime = dayjs().format('MMM d, YYYY [at] hh:mm:ss')
     $('#currentDay').text(currentTime)
   }
 
