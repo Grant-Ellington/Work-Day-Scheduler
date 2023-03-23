@@ -109,6 +109,74 @@ $(function () {
   // attribute of each time-block be used to conditionally add or remove the
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
+
+  var currentHour = parseInt(dayjs().format('H'))
+
+  console.log(typeof currentHour)
+  if(currentHour === 9){
+      nineHr.attr('class', 'row time-block present')
+    }else if(currentHour > 9){
+      nineHr.attr('class', 'row time-block future')
+    }else{
+      nineHr.attr('class', 'row time-block past')
+  }
+
+  if(currentHour === 10){
+      tenHr.attr('class', 'row time-block present')
+    }else if(currentHour>10){
+      tenHr.attr('class', 'row time-block future')
+    }else{
+      tenHr.attr('class', 'row time-block past')
+  }
+  if(currentHour === 11){
+      elevenHr.attr('class', 'row time-block present')
+    }else if(currentHour>11){
+      elevenHr.attr('class', 'row time-block future')
+    }else{
+      elevenHr.attr('class', 'row time-block past')
+  }
+  if(currentHour === 12){
+    twelveHr.attr('class', 'row time-block present')
+    }else if(currentHour<12){
+    twelveHr.attr('class', 'row time-block past')
+    }else{
+    twelveHr.attr('class', 'row time-block future')
+    }
+  if(currentHour === 13){
+    thirteenHr.attr('class', 'row time-block present')
+    }else if(currentHour<13){
+    thirteenHr.attr('class', 'row time-block past')
+    }else{
+    thirteenHr.attr('class', 'row time-block future')
+    }
+  if(currentHour === 14){
+  fourteenHr.attr('class', 'row time-block present')
+    }else if(currentHour<14){
+  fourteenHr.attr('class', 'row time-block past')
+    }else{
+  fourteenHr.attr('class', 'row time-block future')
+    }
+  if(currentHour === 15){
+    fifteenHr.attr('class', 'row time-block present')
+    }else if(currentHour<15){
+    fifteenHr.attr('class', 'row time-block past')
+    }else{
+    fifteenHr.attr('class', 'row time-block future')
+    }
+  if(currentHour === 16){
+    sixteenHr.attr('class', 'row time-block present')
+    }else if(currentHour<16){
+    sixteenHr.attr('class', 'row time-block past')
+    }else{
+    sixteenHr.attr('class', 'row time-block future')
+    }
+  if(currentHour === 17){
+    seventeenHr.attr('class', 'row time-block present')
+    }else if(currentHour<17){
+    seventeenHr.attr('class', 'row time-block past')
+    }else{
+    seventeenHr.attr('class', 'row time-block future')
+    }
   //
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
