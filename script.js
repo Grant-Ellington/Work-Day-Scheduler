@@ -64,7 +64,7 @@ $(function () {
     localStorage.setItem('savedNoteSixteen', savedNote)
   });
   saveBtnSeventeen.on('click', function(){
-    savedNote = textareaSevenTeen.val() 
+    savedNote = textareaSeventeen.val() 
     localStorage.setItem('savedNoteSeventeen', savedNote)
   });
   // textarea set to previous local storage.

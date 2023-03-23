@@ -8,6 +8,7 @@
   * [Test](#Test)
   * [Technologies](#Technologies)
   * [Questions](#Questions)
+  * [Features](#Features)
   
   ## License
   
@@ -21,7 +22,11 @@
   
   ## Installation
   
-  follow the deployed link and start using
+  Follow the deployed link and start using
+
+  ![front of app](./assets/img/Work-day-scheld.png)
+
+  [Deployed Link](https://grant-ellington.github.io/Work-Day-Scheduler/)
   
   ## Usage Information
   
@@ -47,3 +52,8 @@
   ## Questions
   Grant-Ellington
   [gellingtonem6@gmail.com](gellingtonem6@gmail.com)
+
+  ## Features
+  * a clock which updates automatically
+  * color sections to show past, present and future.
+  * the use of local storage to keep notes as persistent data
